@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head><title>Slighter</title></head>
+<body>
+  <h1 style="color:blue;font-family:arial">CONFIG PAGE</h1>
+  <h2>Device Information</h2>
+  <table>
+    <tr>
+		<td>device code</td>
+		<td>: </td>
+		<td>%DEVICE_CODE%</td>
+	</tr>
+    <tr>
+		<td>FW Version</td>
+		<td>: </td>
+		<td>%FW_VERSION%</td>
+	</tr>
+    <tr>
+		<td>SSID name</td>
+		<td>: </td>
+		<td>%SSID%</td>
+	</tr>
+	<tr>
+		<td>SSID pass</td>
+		<td>: </td>
+		<td>%PASSWRDDSPLY%</td>
+		<td></td>
+		<td></td>
+	</tr>
+
+  </table>
+  <h2>Device configuration</h2>
+  <h3>connection setting</h3>
+  <form action = "/get"> 
+  <table border="0">
+    <tr>
+		<td>SSID</td>
+		<td>: <input type="text" name="ssid" value=%SSID%></td>
+	</tr>
+    <tr>
+		<td>SSID Password</td>
+		<td>: <input type="password" name="ssid_password" id="ssid_password" value=%PASSWRD%></td>
+	</tr>
+  </table>
+	<br>
+	<input type="submit" value="Save Config">
+</form> 
+
+<p>
+	<a href="/reboot"><button class="button">Reboot</button>
+</p>  
+
+</body>
+</html>
