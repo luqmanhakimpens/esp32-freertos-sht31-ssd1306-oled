@@ -1,0 +1,11 @@
+.pio
+.pioenvs
+.piolibdeps
+.project
+.cproject
+.vscode
+.settings
+note.txt
+#serial_cli.txt
+test/transaction_serial.py
+include_paths.xml
