@@ -93,4 +93,12 @@ const char build_date[] =
 	'\0'
 };
 
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 64 // OLED display height, in pixels
+#define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
+
+#define NTP_SERVER "pool.ntp.org"
+#define GMT_PLUS_7 3600*7
+#define DAYLIGHT_OFFSET_NONE 0
+
 #endif /* APP_CONFIG_H_ */
