@@ -136,6 +136,8 @@ void setup()
 	sht_init();
 	wifi_init(&config);
 	time_init(NTP_SERVER, GMT_PLUS_7, DAYLIGHT_OFFSET_NONE);
+	task_create_clock();
+	task_create_sensing();
 }
 
 void loop()
